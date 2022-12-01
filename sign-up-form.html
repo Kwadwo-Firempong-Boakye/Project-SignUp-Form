@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="sign-up-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="sign-up-form.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left-area">
+            <img src="https://images.unsplash.com/photo-1597524734346-1e97c3b946c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="happy writer" class="base-img">
+            <div class="img-background">
+                <img src="./SWGG Logo - small.png" alt="SWGG Logo" class="logo-img">
+            </div>
+            <p class="attribution">Photo by <a href="https://unsplash.com/@jakaylatoney">Jakayla Toney</a> on <a href="https://unsplash.com/photos/sVEOjBD9Lmo">Unsplash</a></p>
+        </div>
+
+        <div class="right-area">
+            <div class="intro-text">
+                <h2>Once Upon A Time<span class="dot-dot"> . . .</span></h2>
+                <p>Want to join the 
+                    <span class="brand-bold">Script Writers Guild of Ghana</span>? 
+                    Well, you've come to the right place. 
+                    Fill out the form below and a guild representative 
+                    will give you a call within 24hours to vet you. 
+                    We look forward to welcoming you into our fast-growing 
+                    community and wish you all the best in the interview process
+                <br><br>
+                <span class="brand-bold"">P.S.</span>
+                This is not a real online service
+            </p>
+            </div>
+            
+            <div>
+                <form action="" method="post">
+                    <hr class="divider-top">
+                    <p style="font-weight: 600; font-size: 1.4rem; color: var(--swgreen); padding: 0.25rem 7rem;">
+                        Let's do this!
+                    </p>
+                    <div class="form-container">
+                        <label for="first-name">First Name
+                            <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name" pattern="^[^0-9]+$">
+                        </label>
+                        <label for="last-name">Last Name
+                            <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name" pattern="^[^0-9]+$">
+                        </label>
+                        <label for="email">Email
+                            <input type="email" required placeholder="e.g. abc@xyz.com">
+                        </label>
+                        <label for="phone">Phone-number (USA)
+                            <input type="tel" id="phone" name="phone" required placeholder="e.g. 123-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                        </label>
+                        <label for="password">Password
+                            <input class="error" type="password" id="password" name="password" required placeholder="Enter at least 7 characters (number, lower & uppercase characters)" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="7">
+                        </label>
+                        <label for="confirm-password">Confirm Password
+                            <input class="error" type="password" id="confirm-password" name="confirm-password" required placeholder="Repeat your password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="7">
+                        </label>
+                    </div>
+                    <br>
+                    <hr class="divider-bottom">
+                    <button class="submit" type="submit">Create Account</button>
+                    
+                </form>
+                <p class="login">Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
