@@ -1,0 +1,177 @@
+:root {
+    font-family: sans-serif;
+    font-size: 14px;
+    --swgreen: #7ab756;
+    --graytext: #2f2f2f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    /* letter-spacing: 0.3px; */
+    /* border: 5px solid red; */
+}
+
+.left-area {
+    width: 40vw;
+    /* border: 5px solid green; */
+
+}
+
+.base-img {
+    height: 100vh;
+    width: 100%;
+    border-right: 5px solid var(--swgreen);
+    object-fit: cover;
+}
+
+.img-background {
+    position: relative;
+    bottom: 92vh;
+    display: flex;
+    background: black;
+    height: 125px;
+    width: 100%;
+    opacity: 0.65;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo-img {
+    max-height: 50%;
+    max-width: 70%;
+    
+}
+
+.attribution {
+    color: #fff;
+    white-space: pre;
+    font-size: 1rem;
+    position: relative;
+    bottom: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-area {
+   width: 70%;
+   font-family: 'Kanit', sans-serif;
+   background: #f9fafb;
+}
+
+.intro-text {
+    padding: 0 7rem;
+    text-align: justify;
+}
+
+.intro-text h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 6rem 0 1rem 0;
+    color: var(--graytext);
+}
+
+.intro-text p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    color: var(--graytext);
+    max-width: 90%;
+}
+
+.brand-bold {
+    font-weight: bold;
+    /* color: var(--swgreen); */
+}
+
+form {
+    background: #fff;
+}
+
+.form-container {
+    padding: 0.25rem 7rem;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-basis: 45%;
+}
+
+label input {
+    height: 2rem;
+    border: 1px solid #E5E7EB;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+form input:valid {
+    outline: 1px solid var(--swgreen);
+    background: #e7f7e5;
+}
+
+form input:not(:placeholder-shown):not(:focus):invalid {
+    outline: 1px solid red;
+    background-color: rgb(251, 238, 238);
+}
+
+form input:focus {
+    outline: 1px solid rgb(147, 175, 230);
+}
+
+::placeholder {
+    color: #949892;
+}
+
+.divider-top {
+    border: 2px solid #f7f7f7;
+    box-shadow: 0px -4px 16px #f7f7f7;
+}
+
+.divider-bottom {
+    border: 2px solid #f1f1f1;
+    box-shadow: 0px 4px 8px #f1f1f1;
+}
+
+.submit, .login {
+    margin-left: 7rem;
+    font-size: 1.2rem;
+
+}
+
+.submit {
+    padding: 1.5rem 3.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background: var(--swgreen);
+    border: none;
+    border-radius: 5px;
+    transition: background 0.25s linear;
+    /* box-shadow: 2px 2px 5px rgb(48, 113, 58); */
+}
+
+.submit:hover {
+    background: #447429;
+}
+
+a {
+    text-decoration: none;
+    color: var(--swgreen);
+    font-weight: bold;
+}
