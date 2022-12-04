@@ -72,11 +72,12 @@ body {
 }
 
 .intro-text h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     margin: 0;
     padding: 6rem 0 1rem 0;
     color: var(--graytext);
+    white-space: nowrap;
 }
 
 .intro-text p {
@@ -97,7 +98,7 @@ form {
 }
 
 .form-container {
-    padding: 0.25rem 7rem;
+    padding: 0.25rem 7rem 0 7rem;
     max-width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -138,6 +139,13 @@ form input:focus {
     color: #949892;
 }
 
+.passError {
+    position: relative;
+    bottom: 1.2rem;
+    font-size: 0.9rem;
+    color: rgb(226, 98, 98);
+}
+
 .divider-top {
     border: 2px solid #f7f7f7;
     box-shadow: 0px -4px 16px #f7f7f7;
@@ -174,4 +182,102 @@ a {
     text-decoration: none;
     color: var(--swgreen);
     font-weight: bold;
+}
+
+.footer-area {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre;
+    margin: 5rem 0 0 7rem;
+    
+}
+
+.footer-area a {
+    font-weight: normal;
+    color: #447429;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-area {
+        width: 100vw;
+        height: 45vh;
+    }
+    
+    .base-img {
+        height: 45vh;
+        width: 100vw;
+        border-bottom: 5px solid var(--swgreen);
+        border-right: none;
+        /* object-fit: cover; */
+    }
+    
+    .img-background {
+        bottom: 46vh;
+        height: 5vh;
+    }
+    
+    .attribution {
+        bottom: 10vh;
+        font-size: 0.9rem;
+    }
+
+    .right-area {
+        width: 100%;
+     }
+     
+     .intro-text {
+        padding: 0 3rem;
+     }
+     
+     .intro-text h2 {
+        padding: 4rem 0 1rem 0;
+        font-size: 7.5vw;
+    
+     }
+     
+     .intro-text p {
+         max-width: 100%;
+     }
+     
+    
+    .form-container {
+        padding: 0.25rem 3rem;
+        max-width: 100%;
+    }
+
+    .divider-top + p {
+        padding: 0.25rem 3rem !important;
+    }
+    
+    label {
+        flex-basis: 100%
+    }
+    
+    
+    .submit, .login {
+        margin-left: 3rem;
+    }
+    
+    .submit {
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+    }
+
+    .footer-area {
+        margin: 3rem 0 0 3rem;
+    }
+
 }
